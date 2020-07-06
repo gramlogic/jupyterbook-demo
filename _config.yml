@@ -1,0 +1,24 @@
+# Book settings
+title: A Book of Demonstrations 
+author: Michael McCarrin
+logo: jupyter-demo-logo_crop.png
+exclude_patterns: [README.md, _drafts/*] 
+
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Information about where the book exists on the web
+repository:
+  url                       : https://github.com/gramlogic/jupyterbook-demo/
+  branch: master  # An optional branch, defaults to `master`
+
+# Configure your Binder links, such as the URL of the BinderHub.
+launch_buttons:
+  binderhub_url             : https://mybinder.org
+
+html:
+  use_repository_button: true
+  use_edit_page_button: true
+
+
