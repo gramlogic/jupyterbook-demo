@@ -1,4 +1,4 @@
 # jupyterbook-demo
 A repository of code that demos Jupyterbook features
-* This is the code.
-* The book is [here](https://gramlogic.github.io/jupyterbook-demo/)
+* This is where the code lives.
+* To see the book, click [here](https://gramlogic.github.io/jupyterbook-demo/)
