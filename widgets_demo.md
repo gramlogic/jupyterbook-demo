@@ -12,6 +12,91 @@ kernelspec:
 ---
 
 # Widgets Demo
+* All widgets must be run within code cell directives. 
+* It is possible to hide the code.
+* All widgets here are taken from the [ipywidgets documentation](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html), which mysteriously does not display examples.
+
+## Numeric Widgets
+
+### IntSlider
+```{code-cell} ipython3
+import ipywidgets as widgets
+
+widgets.IntSlider(
+    value=7,
+    min=0,
+    max=10,
+    step=1,
+    description='Vertical IntSlider:',
+    disabled=False,
+    continuous_update=False,
+    orientation='vertical',
+    readout=True,
+    readout_format='d'
+)
+```
+
+### FloatSlider
+```{code-cell} ipython3
+
+widgets.FloatSlider(
+    value=7.5,
+    min=0,
+    max=10.0,
+    step=0.1,
+    description='Horizontal FloatSlider:',
+    disabled=False,
+    continuous_update=False,
+    orientation='horizontal',
+    readout=True,
+    readout_format='.1f'
+)
+```
+
+### FloatLogSlider
+```{code-cell} ipython3
+widgets.FloatLogSlider(
+    value=10,
+    base=10,
+    min=-10, # max exponent of base
+    max=10, # min exponent of base
+    step=0.2, # exponent step
+    description='Log Slider'
+)
+```
+
+### FloatProgress
+```{code-cell} ipython3
+widgets.IntProgress(
+    value=7,
+    min=0,
+    max=10,
+    step=1,
+    description='Loading:',
+    bar_style='', # 'success', 'info', 'warning', 'danger' or ''
+    orientation='horizontal'
+)
+```
+
+### plot test 
+```{code-cell} ipython3
+%matplotlib inline
+from ipywidgets import interactive
+import matplotlib.pyplot as plt
+import numpy as np
+
+def f(m, b):
+    plt.figure(2)
+    x = np.linspace(-10, 10, num=1000)
+    plt.plot(x, m * x + b)
+    plt.ylim(-5, 5)
+    plt.show()
+
+interactive_plot = interactive(f, m=(-2.0, 2.0), b=(-3, 3, 0.5))
+output = interactive_plot.children[-1]
+output.layout.height = '350px'
+interactive_plot
+```
 
 
 
@@ -28,6 +113,8 @@ out
 with out:
     display(YouTubeVideo('9_Cnf0mPgj0'))
 ```
+
+
 
 ## Markdown + notebooks
 

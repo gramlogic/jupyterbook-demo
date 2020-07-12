@@ -1,18 +1,6 @@
-Welcome to your Jupyter Book
-============================
+# Welcome
 
-This is a small sample book to give you a feel for how book content is
-structured.
+This is a list of demonstrations and experiments with features available in Jupyterbooks. It is a work in progress.
 
-Check out the content pages bundled with this sample book to get started.
 
-This page must be edited.
-
-```{toggle}
-Secret messages here.
-```
-
-```{admonition} Magic!
-:class: dropdown
-Abracadabra.
-```
+``

@@ -81,27 +81,67 @@ Deprecated, and doesn't seem to work.
 ```
 
 ### code
-
+```{code} python3
+def my_function():
+  print("testing code block")
+  print(2*40)
+```
 ### math
+```{math}
+\aleph = 2^\aleph
+```
 
 ### rubric
-
+```{rubric} A Rubric is a Heading 
+```
 
 ### epigraph
+```{epigraph}
+I am the sign of the letter and the designation of the division.
+
+-- Thunder, Perfect Mind
+```
 
 ### highlights
+```{highlights}
+Highlights include:
+* The smog that rubs its back.
+* The shadow of this red rock.
+
+Must end with a non-list paragraph element or the attribution won't look cool.
+
+-- The textbook of footnoted poetry 
+
+```
 
 ### pull-quote
+```{pull-quote}
+A beautiful pull-quote that draws the reader in. Looks exactly like highlights and epigraphs though.
+
+-- a brilliant observer
+```
 
 ### compound paragraph
+```{compound}
+A compound paragraph is a paragraph with things inside it like:
+
+* lists
+* literal blocks
+* tables
+
+That are still part of the same paragraph.
+
+```
 
 ### container
+```{container} special
+This content will be in a generic block-level container with the class "special" because that's the argument I passed to the directive.
+```
 
-### table
-
-### csv table
-
-### list table
+### Tables
+* Restructured Text supports 3 kinds of tables.
+* I can't get them to work.
+* They are table, csv-table, and list table.
 
 
 
