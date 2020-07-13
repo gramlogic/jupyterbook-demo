@@ -1,5 +1,6 @@
 ---
 jupytext:
+  formats: md:myst
   text_representation:
     extension: .md
     format_name: myst
@@ -13,6 +14,5 @@ kernelspec:
 
 # Widgets Demo
 * All widgets must be run within code cell directives. 
-* It is possible to hide the code.
 
 

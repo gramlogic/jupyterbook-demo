@@ -156,7 +156,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/gramlogic/jupyterbook-demo/master?urlpath=tree/widgets_demo.md"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/gramlogic/jupyterbook-demo/master?urlpath=tree/widgets_demo.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -164,6 +164,9 @@
         
         
         
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebelabSBT()" title="Launch Thebelab" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
         
     </div>
 </div>
@@ -196,7 +199,6 @@
 <h1>Widgets Demo<a class="headerlink" href="#widgets-demo" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>All widgets must be run within code cell directives.</p></li>
-<li><p>It is possible to hide the code.</p></li>
 </ul>
 </div>
 
